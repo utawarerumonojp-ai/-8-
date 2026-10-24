@@ -17,15 +17,117 @@ button,input,textarea{font:inherit}button{cursor:pointer}
 main{padding:20px 14px 60px}.section{display:none}.section.active{display:block}.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.card{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);margin-bottom:15px}.card h2,.card h3{margin:0 0 10px}.card h2{font-size:1.3rem}.card h3{font-size:1.05rem}.goldline{height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:12px 0}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:13px 10px;border-radius:12px;background:#e9e4d2;text-align:center}.stat strong{display:block;font-size:1.3rem;color:var(--jade)}.stat small{color:var(--muted)}.notice{border-left:4px solid var(--rust);padding:10px 12px;background:#f5e7da;border-radius:0 10px 10px 0;font-size:.92rem}.mini-list{padding-left:18px;margin:8px 0}.mini-list li{margin:5px 0}.day-layout{display:grid;grid-template-columns:250px 1fr;gap:16px}.day-list{position:sticky;top:64px;align-self:start}.day-button{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fffaf0;border-radius:12px;padding:11px 12px;margin:7px 0;color:var(--ink)}.day-button.active{background:var(--ink);color:#fff8e8;border-color:var(--gold)}.day-button small{display:block;opacity:.75}.day-head{background:linear-gradient(120deg,#1b3b34,#315e50);color:#fff8e8;border-radius:16px;padding:18px;margin-bottom:14px}.day-head h2{margin:0 0 5px}.timeline{position:relative;padding-left:20px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--gold)}.event{position:relative;margin:0 0 12px;background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:13px 14px;box-shadow:0 4px 14px #1025230a}.event:before{content:"";position:absolute;left:-19px;top:18px;width:10px;height:10px;background:var(--rust);border:2px solid var(--paper);border-radius:50%}.event-top{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}.event h3{margin:0;font-size:1rem}.time{font-weight:700;color:var(--rust);white-space:nowrap;font-variant-numeric:tabular-nums}.event p{margin:6px 0;color:#485b52;font-size:.92rem}.event .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tag{background:#e8e2cf;color:#355246;border-radius:99px;padding:3px 8px;font-size:.75rem}.event a,.linkbtn{display:inline-block;color:#fff8e8;background:var(--jade);text-decoration:none;border-radius:8px;padding:6px 10px;font-size:.82rem;margin-top:7px}.event a:hover,.linkbtn:hover{background:var(--rust)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:15px}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #e8dfc9}.checkrow input{margin-top:5px;accent-color:var(--jade);width:18px;height:18px}.checkrow.done span{text-decoration:line-through;color:#879087}.field{width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fffdf7;color:var(--ink);margin:5px 0 10px}.btn{border:0;background:var(--ink);color:#fff8e8;padding:9px 13px;border-radius:9px}.btn.secondary{background:#e6dfcc;color:var(--ink);border:1px solid var(--line)}.small{font-size:.84rem;color:var(--muted)}.flight{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.flight:last-child{border:0}.airport{text-align:center}.airport strong{font-size:1.15rem}.arrow{text-align:center;color:var(--rust);font-size:1.3rem}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#e9e2cf}.footer{text-align:center;padding:25px 12px;background:var(--deep);color:#e7dfc7;font-size:.82rem}.footer span{color:var(--gold)}.hidden{display:none!important}
 @media(max-width:760px){.intro-grid,.two-col{grid-template-columns:1fr}.day-layout{grid-template-columns:1fr}.day-list{position:static;display:flex;overflow:auto;gap:7px;padding-bottom:5px}.day-button{min-width:155px;margin:0}.stat-row{gap:6px}.stat{padding:10px 5px}.event-top{display:block}.time{display:block;margin-bottom:3px}.hero{padding-top:25px}}
 @media print{.nav,.day-list,.btn,.linkbtn{display:none!important}body{background:white}.section{display:block!important}.card,.event{box-shadow:none;break-inside:avoid}.day-layout{display:block}.hero{print-color-adjust:exact}}
+
+/* Fantasy Suikoden-inspired upgrade: constellation chapter covers + transport cards */
+:root{--night:#0b1b22;--star:#f4df9a;--parchment:#efe3c4}
+.hero{background:radial-gradient(circle at 18% 18%,#c9a75c22 0 2px,transparent 3px),radial-gradient(circle at 77% 35%,#f8e8b455 0 1px,transparent 2px),radial-gradient(ellipse at 75% 15%,#527968 0,transparent 34%),linear-gradient(135deg,#091922 0%,#102d31 48%,#274b3d 100%)}
+.hero:before{content:"✦   ·  ✧      ✦      ·    ✧       ✦     ·       ✦";position:absolute;inset:10px 0 auto 0;height:100%;font-size:clamp(18px,3vw,30px);letter-spacing:1.2em;line-height:3.6;color:#f4df9a28;white-space:normal;pointer-events:none;transform:rotate(-7deg)}
+.hero .wrap{position:relative;z-index:1}.hero h1{text-shadow:0 3px 18px #0008}.eyebrow{font-weight:700}
+.chapter-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:10px;margin-top:12px}
+.chapter-card{position:relative;overflow:hidden;min-height:142px;border:1px solid #c9ab67;border-radius:14px;padding:14px;background:linear-gradient(145deg,#10272d,#244a40);color:#fff4d6;box-shadow:inset 0 0 0 3px #d7b66d12}
+.chapter-card:before{content:"✦ · ˚　✧　˚ · ✦";display:block;color:#d7b66d;font-size:1rem;letter-spacing:.2em;margin-bottom:14px}
+.chapter-card:after{content:"108";position:absolute;right:8px;bottom:-20px;font-size:4.5rem;font-weight:900;color:#f3d88b12;line-height:1}
+.chapter-card b{display:block;font-size:1rem;margin-bottom:5px}.chapter-card small{color:#e6dcbf;position:relative;z-index:1}
+.day-head{position:relative;overflow:hidden;background:radial-gradient(circle at 80% 15%,#e4c36d33,transparent 30%),linear-gradient(120deg,#0c2029,#1b433b 62%,#4c6044);border:1px solid #d7b66d;box-shadow:inset 0 0 0 3px #e4c36d12}
+.day-head:after{content:"✦";position:absolute;right:18px;top:5px;font-size:5rem;color:#f4df9a24;line-height:1;pointer-events:none}
+.day-head .chapter-mark{display:flex;gap:7px;align-items:center;color:#f1d78d;font-size:.78rem;letter-spacing:.12em;text-transform:uppercase;margin-bottom:8px}
+.day-head .chapter-mark span{display:inline-flex;border:1px solid #d7b66d77;border-radius:50%;width:30px;height:30px;align-items:center;justify-content:center;font-size:1rem}
+.day-head h2{font-size:clamp(1.25rem,3vw,1.8rem);position:relative;z-index:1}
+.route-panel{margin:0 0 16px;padding:16px;border:1px solid #c9ab67;border-radius:15px;background:linear-gradient(135deg,#f9f2df,#eee2c2);box-shadow:var(--shadow)}
+.route-panel h3{margin:0 0 6px;color:#24493c}.route-intro{margin:0 0 12px;color:#647166;font-size:.86rem}
+.route-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}
+.route-card{border:1px solid #d5c49a;border-radius:11px;padding:12px;background:#fffaf0}
+.route-card h4{margin:0 0 6px;font-size:.96rem;color:#1b4038}.route-card p{margin:4px 0;font-size:.87rem;color:#46584f}
+.route-card .route-meta{display:flex;flex-wrap:wrap;gap:5px;margin:7px 0}.route-chip{font-size:.72rem;border-radius:99px;background:#e6ddc2;padding:3px 7px;color:#39574a}
+.route-card a{display:inline-block;margin-top:7px;padding:6px 9px;border-radius:7px;background:#244d40;color:#fff5d9;text-decoration:none;font-size:.8rem}
+.route-card a:hover{background:#a64e39}.route-caution{font-size:.8rem;color:#78523a;background:#f5e4d2;border-radius:8px;padding:8px 10px;margin-top:10px}
+.event .map-actions{display:flex;gap:7px;flex-wrap:wrap}.event .map-actions a{margin-right:0}
+.star-divider{display:flex;align-items:center;gap:10px;color:#a48643;margin:15px 0;font-size:.82rem;letter-spacing:.12em}.star-divider:before,.star-divider:after{content:"";height:1px;flex:1;background:linear-gradient(90deg,transparent,#c9ab67)}
+@media(max-width:760px){.chapter-grid{grid-template-columns:repeat(2,1fr)}.route-grid{grid-template-columns:1fr}.chapter-card{min-height:125px}.route-panel{padding:12px}}
+
+
+/* Visual direction reset: classic Suikoden II menu UI, sapphire panels, gold trim, pixel party sprites */
+:root{--ink:#e8e8e2;--deep:#071a35;--jade:#174d86;--gold:#f0cf55;--paper:#0b1c3b;--paper2:#102b52;--muted:#b9c9df;--line:#8c7846;--shadow:0 8px 24px #0005}
+body{background:radial-gradient(ellipse at top,#163f72 0,#091a36 58%,#06152b 100%);color:#e8e8e2;font-family:ui-serif,"Noto Serif TC","Songti TC",serif}
+.hero{min-height:300px;background:radial-gradient(ellipse at 78% 30%,#276ba0 0,transparent 35%),linear-gradient(135deg,#06162e,#123e70 58%,#071a35);border-bottom:4px solid #f0cf55;box-shadow:inset 0 -7px 0 #f0cf5518}
+.hero:after{content:"✧　✦　✧";right:170px;bottom:0;color:#ffe99c24;font-size:70px}
+.hero .wrap{padding-right:170px}
+.hero-party{position:absolute;right:max(18px,calc((100vw - 1120px)/2));bottom:0;height:220px;display:flex;align-items:flex-end;gap:0;pointer-events:none;z-index:2}
+.hero-party img{height:195px;width:auto;max-width:130px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 5px 3px #0008)}
+.hero-party img+img{height:170px;margin-left:-20px}
+.pill{border:1px solid #f0cf5580;background:#061a35;color:#ffefb7;border-radius:4px}
+.nav{background:#0a2142f2;border-bottom:2px solid #d3b74d}.nav button{color:#f3e7c0;border-radius:4px;border:1px solid transparent}.nav button.active,.nav button:hover{background:linear-gradient(#1e5b98,#123b6c);color:#fff5c7;border-color:#f0cf55;box-shadow:inset 0 0 0 1px #ffffff20}
+.card,.event,.route-panel,.route-card{background:linear-gradient(145deg,#15365f,#0d274b);border:1px solid #9e8748;border-radius:5px;color:#e8e8e2;box-shadow:inset 0 0 0 2px #f0cf5510,0 8px 20px #0003}
+.card h2,.card h3,.route-panel h3,.route-card h4{color:#ffe59a;text-shadow:0 1px #0008}
+.goldline{background:linear-gradient(90deg,#f7e48b,#b78b32,transparent)}
+.stat{background:linear-gradient(#1b4778,#102b50);border:1px solid #79683e;border-radius:4px}.stat strong{color:#ffe58d}.stat small,.small,.route-intro{color:#b9c9df}
+.notice{background:#3c2d26;border-left-color:#e3b24e;color:#ffedcf}
+.chapter-card{border:2px solid #c8a947;border-radius:4px;background:linear-gradient(145deg,#0c2850,#1c548a);box-shadow:inset 0 0 0 2px #f0cf5522,0 6px 14px #0004}
+.chapter-card:before{content:"✦　FATE STAR　✦";font-size:.7rem;letter-spacing:.12em;color:#f3d66f}.chapter-card:after{color:#fff0a412}.chapter-card small{color:#c9d8ec}
+.day-button{background:linear-gradient(135deg,#102d53,#0a2141);color:#e9e6d7;border:1px solid #887441;border-radius:4px}.day-button.active{background:linear-gradient(#2465a0,#123b68);border:2px solid #f0cf55;color:#fff1ad}
+.day-head{border:2px solid #d6b64d;border-radius:5px;background:linear-gradient(120deg,#081a35,#164d82 70%,#0d2d53);box-shadow:inset 0 0 0 3px #f0cf551a}.day-head:after{content:"✦";color:#ffe99c30}.day-head .chapter-mark{color:#ffe18a}
+.event{border-radius:4px}.event:before{background:#f0cf55;border-color:#0b1c3b;box-shadow:0 0 0 2px #a88a36}.time{color:#ffe08b}.tag,.route-chip{background:#1d4773;border:1px solid #6d805f;color:#d8e8fa;border-radius:3px}
+.event p,.route-card p{color:#d0dceb}.event a,.linkbtn,.route-card a,.btn{background:linear-gradient(#2566a0,#123c6c);border:1px solid #e2c65b;color:#fff2bf;border-radius:4px}.event a:hover,.linkbtn:hover,.route-card a:hover{background:#8b542d}
+.field{background:#081d3a;color:#f8edcf;border-color:#887441;border-radius:4px}.btn.secondary{background:#1c3a60;color:#f4e6b9;border-color:#887441}
+th{background:#1b4778;color:#ffe8a0}td{border-color:#425a78}.footer{background:#06152b;border-top:3px solid #c7a543;color:#cad8e9}
+.route-caution{background:#3d3028;color:#ffe0b8}.star-divider{color:#f1d783}.star-divider:before,.star-divider:after{background:linear-gradient(90deg,transparent,#c9ab67)}
+.party-roster{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.party-member{display:flex;align-items:center;gap:12px;padding:10px;background:linear-gradient(135deg,#0a2142,#194b7c);border:1px solid #c8a947;border-radius:4px;min-height:110px}.party-member img{height:100px;width:76px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px 2px #0008)}.party-member b{display:block;color:#ffe59a}.party-member small{color:#c5d7ed}
+@media(max-width:760px){.hero .wrap{padding-right:0}.hero-party{right:4px;height:115px;opacity:.82}.hero-party img{height:110px;max-width:72px}.hero-party img+img{height:95px;margin-left:-16px}.hero{padding-bottom:30px}.hero h1,.hero p,.hero .eyebrow,.hero-meta{position:relative;z-index:3;max-width:78%}.hero h1{font-size:1.9rem}.hero p{font-size:.85rem}.party-roster{grid-template-columns:1fr}.party-member{min-height:90px}.party-member img{height:84px}}
+
+
+/* Final art direction: closer to the classic blue-and-gold JRPG status/menu screen */
+:root{--ink:#edf3ff;--deep:#06152c;--jade:#1a5b9a;--gold:#f6d45f;--paper:#081a36;--paper2:#10294d;--muted:#b7cbe5;--line:#9c813d;--shadow:0 10px 26px #0007}
+body{background-color:#07162e;background-image:radial-gradient(ellipse at 50% -12%,#245a8c 0,transparent 56%),linear-gradient(180deg,#081a36,#061329);color:#edf3ff}
+.hero{min-height:330px;padding:32px 18px 28px;background:linear-gradient(180deg,#174f88 0%,#0b2e5b 36%,#071a38 100%);border-bottom:5px solid #e9c94e;box-shadow:inset 0 0 0 2px #6f9fcf,inset 0 -10px 0 #e9c94e22;}
+.hero:before{content:"";position:absolute;inset:10px 10px 9px;border:1px solid #d8b84b;box-shadow:inset 0 0 0 3px #f5dc7a19;pointer-events:none;z-index:0}
+.hero:after{content:"✧  ✦  ✧";right:180px;bottom:4px;color:#ffe99c30;font-size:54px;letter-spacing:.3em;transform:none}
+.hero .wrap{padding:14px 260px 14px 18px;position:relative;z-index:2;min-height:235px}
+.hero .eyebrow{display:inline-block;background:linear-gradient(#2e6ba3,#174579);border:1px solid #f3d15a;padding:5px 11px;color:#ffeb9d;letter-spacing:.16em;box-shadow:inset 0 0 0 1px #fff2}
+.hero h1{font-size:clamp(2rem,5.3vw,3.5rem);color:#fff3bd;text-shadow:0 2px #5c4214,0 4px 0 #06142c,0 0 18px #7dbbff4a;margin-top:16px;letter-spacing:.04em}
+.hero p{max-width:570px;color:#d7e8fb;text-shadow:0 1px #07152b}
+.hero-meta{gap:7px}.pill{border:1px solid #e6c54c;border-radius:3px;background:linear-gradient(#1c5186,#0a2c56);box-shadow:inset 0 0 0 1px #ffffff12;color:#fff0b4}
+.hero-party{right:max(22px,calc((100vw - 1080px)/2));bottom:13px;height:260px;align-items:flex-end;padding:9px 10px 0;background:linear-gradient(180deg,#1c5489,#0a2449);border:2px solid #e5c54f;box-shadow:inset 0 0 0 3px #f4df8d22,0 8px 18px #0007;gap:0}
+.hero-party:before{content:"PARTY";position:absolute;top:6px;left:10px;font:700 .65rem ui-monospace,monospace;letter-spacing:.2em;color:#ffdf70}
+.hero-party img{height:215px;max-width:132px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px 2px #0008)}
+.hero-party img+img{height:185px;margin-left:-14px}
+.nav{background:#071b39f5;border-bottom:2px solid #e6c34c;box-shadow:0 4px 14px #0005}.nav-inner{gap:6px}.nav button{color:#e4edfa;border:1px solid #426a96;border-radius:3px;background:linear-gradient(#163e6a,#0c2850);box-shadow:inset 0 0 0 1px #ffffff0b}.nav button.active,.nav button:hover{background:linear-gradient(#337bb4,#17518a);border-color:#ffe071;color:#fff1b2;box-shadow:inset 0 0 0 1px #ffffff38,0 0 9px #74c4ff24}
+.card,.event,.route-panel,.route-card{background:linear-gradient(145deg,#163960,#0b2447 70%);border:1px solid #a58b43;border-radius:4px;color:#eaf2ff;box-shadow:inset 0 0 0 2px #e9cd5710,0 8px 20px #0004;position:relative}
+.card:before{content:"";position:absolute;inset:4px;border:1px solid #f0d66b13;pointer-events:none}
+.card h2,.card h3,.route-panel h3,.route-card h4{color:#ffe7a0;text-shadow:0 1px #06152a}.small,.stat small,.route-intro{color:#b9cde6}
+.goldline{background:linear-gradient(90deg,#ffe58a,#c39a36 55%,transparent)}
+.stat{background:linear-gradient(#205386,#102b50);border:1px solid #88753e;border-radius:3px}.stat strong{color:#ffe58d}
+.notice{background:linear-gradient(110deg,#3e3026,#2a2630);border:1px solid #b98b3a;border-left:4px solid #f0c84d;color:#ffebc4;border-radius:3px}
+.chapter-card{min-height:150px;text-align:left;border:2px solid #d3b54b;border-radius:4px;background:linear-gradient(145deg,#1d5b94,#0a2851 72%);box-shadow:inset 0 0 0 3px #f4db7d17,0 5px 12px #0004;transition:transform .15s,filter .15s}
+.chapter-card:hover{transform:translateY(-2px);filter:brightness(1.14)}.chapter-card:before{content:"✦  命運之星  ✦";font-size:.72rem;letter-spacing:.15em;color:#ffe37b;border-bottom:1px solid #e7cb6644;padding-bottom:7px}.chapter-card:after{content:"✧";right:12px;bottom:-20px;font-size:5.5rem;color:#fff2b112}.chapter-card b{color:#fff0b4;text-shadow:0 1px #07152b}.chapter-card small{color:#d1e4fb}
+.day-layout{gap:13px}.day-button{border:1px solid #8e793e;border-radius:3px;background:linear-gradient(145deg,#15395f,#091f40);color:#dce9fa;box-shadow:inset 0 0 0 1px #ffffff0a}.day-button.active{background:linear-gradient(#347bb1,#15477a);border:2px solid #f1d25b;color:#fff0a8;box-shadow:inset 0 0 0 1px #fff3,0 0 12px #5db9ff24}
+.day-head{border:2px solid #e4c64d;border-radius:4px;background:linear-gradient(120deg,#071a36,#18548b 65%,#0a2a50);box-shadow:inset 0 0 0 3px #f5d86c19,0 6px 16px #0004}.day-head:after{content:"✦";color:#ffe99c27}.day-head .chapter-mark{color:#ffe18a}.day-head .chapter-mark span{border-radius:3px;border-color:#e3c54c;background:#164a7c}
+.event{border-radius:4px}.event:before{background:#f0cf55;border-color:#0b1c3b;box-shadow:0 0 0 2px #a88a36}.time{color:#ffe08b}.tag,.route-chip{background:#1c4774;border:1px solid #6e8fb0;color:#e2efff;border-radius:3px}.event p,.route-card p{color:#d0dff1}
+.event a,.linkbtn,.route-card a,.btn{background:linear-gradient(#2e75ae,#124477);border:1px solid #e6c951;color:#fff0b4;border-radius:3px;box-shadow:inset 0 0 0 1px #ffffff15}.event a:hover,.linkbtn:hover,.route-card a:hover,.btn:hover{background:linear-gradient(#4c91c6,#1a5c91)}
+.field{background:#071a36;color:#fff0ca;border:1px solid #907c43;border-radius:3px}.btn.secondary{background:linear-gradient(#1a3d64,#0e294b);color:#f4e6b9;border-color:#887441}th{background:#1b4778;color:#ffe8a0}td{border-color:#405b7b}.footer{background:#051329;border-top:4px solid #c7a543;color:#cad8e9}
+.party-roster{grid-template-columns:1fr 1fr;gap:12px;margin-top:12px}.party-member{position:relative;overflow:hidden;display:flex;align-items:center;gap:12px;padding:10px;background:linear-gradient(135deg,#0a2142,#194b7c);border:2px solid #c8a947;border-radius:4px;min-height:125px;box-shadow:inset 0 0 0 3px #f0cf5512}.party-member:before{content:"同行者";position:absolute;right:8px;top:5px;font-size:.65rem;letter-spacing:.1em;color:#ffe080}.party-member img{height:112px;width:80px;object-fit:contain;image-rendering:pixelated;filter:drop-shadow(0 3px 2px #0008)}.party-member b{display:block;color:#ffe59a}.party-member small{color:#c5d7ed}
+@media(max-width:760px){.hero{min-height:260px;padding:22px 12px 24px}.hero .wrap{padding:10px 112px 10px 10px;min-height:205px}.hero h1{font-size:1.75rem;max-width:100%}.hero p{font-size:.82rem;max-width:100%}.hero-meta{max-width:100%;gap:4px}.pill{font-size:.68rem;padding:4px 6px}.hero-party{right:15px;height:154px;padding:7px 4px 0;bottom:12px}.hero-party img{height:122px;max-width:62px}.hero-party img+img{height:104px;margin-left:-10px}.hero-party:before{font-size:.55rem}.chapter-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.chapter-card{min-height:130px;padding:10px}.party-roster{grid-template-columns:1fr}.party-member{min-height:95px}.party-member img{height:86px;width:65px}.card{padding:14px}}
+
+
+/* Parchment overworld map + tiny traveling party */
+.parchment-map{position:relative;overflow:hidden;margin:0 0 16px;padding:16px;border:4px ridge #9b7843;border-radius:3px;color:#49331f;background-color:#d9c18b;background-image:radial-gradient(ellipse at 18% 25%,#fff2c933 0 2%,transparent 22%),radial-gradient(ellipse at 80% 70%,#77502c22 0 3%,transparent 28%),repeating-linear-gradient(7deg,#6f4d2410 0 1px,transparent 1px 5px),linear-gradient(135deg,#f1dfae,#cdb17a 52%,#e8d39d);box-shadow:inset 0 0 0 3px #f3dfad, inset 0 0 22px #69451b55,0 8px 18px #0004}
+.parchment-map:before{content:"WORLD MAP · TRAVEL LOG";display:block;font:700 .72rem ui-monospace,monospace;letter-spacing:.18em;color:#75532c;border-bottom:2px solid #9b784366;padding:0 0 8px;margin-bottom:8px}
+.parchment-map h3{margin:0 0 3px;color:#563a20;font-family:ui-monospace,monospace;font-size:1.05rem}.map-caption{margin:0 0 8px;font-size:.78rem;color:#765634}
+.overworld-svg{display:block;width:100%;height:auto;max-height:380px;border:1px solid #a3834e;background:#e3ce98a8;image-rendering:pixelated}
+.map-legend{display:flex;flex-wrap:wrap;gap:8px;margin-top:8px;font: .72rem ui-monospace,monospace;color:#684a29}.map-legend span{border:1px solid #98774a;background:#f0dfb5aa;padding:3px 7px}
+.map-stop{font: bold 10px ui-monospace,monospace;fill:#4a321b;paint-order:stroke;stroke:#e9d4a0;stroke-width:3px;stroke-linejoin:round}.map-number{font: bold 9px ui-monospace,monospace;fill:#fff0bf;text-anchor:middle;dominant-baseline:central}
+@keyframes pixelBob{0%,100%{transform:translateY(0)}50%{transform:translateY(-2px)}}.pixel-party{animation:pixelBob .28s steps(2,end) infinite;transform-box:fill-box;transform-origin:center}
+@media(max-width:760px){.parchment-map{padding:10px}.overworld-svg{max-height:none}.map-stop{font-size:11px}}
+@media(prefers-reduced-motion:reduce){.pixel-party{animation:none}}
+
 </style>
 </head>
 <body>
 <header class="hero"><div class="wrap">
 <div class="eyebrow">A JOURNEY OF DESTINY · 2026</div>
 <h1>大阪・京都旅行物語</h1>
-<p>一段旅程，一段回憶。以幻想水滸傳的古典奇幻與星辰冒險感，記錄這趟大阪、京都與奈良之旅。</p>
+<p>一段旅程，一段命運。以古典奇幻、星辰與 108 星宿冒險為靈感，記錄大阪、宇治、京都與奈良的旅行手帳。</p>
 <div class="hero-meta"><span class="pill">📅 2026.10.30 — 11.08</span><span class="pill">✈️ Vietnam Airlines</span><span class="pill">🏯 大阪・宇治・京都・奈良</span><span class="pill">📱 手機友善版</span></div>
-</div></header>
+</div><div class="hero-party" aria-hidden="true"><img src="sprite-hero.png" alt=""><img src="sprite-archer.png" alt=""></div></header>
 <nav class="nav"><div class="nav-inner">
 <button class="active" data-tab="home">✦ 旅程總覽</button><button data-tab="days">📜 每日行程</button><button data-tab="flights">✈️ 航班資訊</button><button data-tab="checklist">🎒 行前清單</button><button data-tab="budget">💰 消費手帳</button><button data-tab="notes">📝 旅行備忘</button>
 </div></nav>
@@ -34,7 +136,7 @@ main{padding:20px 14px 60px}.section{display:none}.section.active{display:block}
 <div class="intro-grid">
 <div class="card"><h2>✦ 旅程序章</h2><div class="goldline"></div>
 <p>這份互動手帳把你的行程整理成每日時間軸。可在手機上切換日期、打開地圖導航、勾選行前用品，也能記錄旅費與旅途心得。</p>
-<div class="stat-row"><div class="stat"><strong>10天</strong><small>旅程跨度</small></div><div class="stat"><strong>4地</strong><small>大阪・宇治・京都・奈良</small></div><div class="stat"><strong>3項</strong><small>已購／預約活動</small></div></div>
+<div class="stat-row"><div class="stat"><strong>10天</strong><small>含去回程</small></div><div class="stat"><strong>4地</strong><small>大阪・宇治・京都・奈良</small></div><div class="stat"><strong>3項</strong><small>已購／預約活動</small></div></div>
 </div>
 <div class="card"><h2>⚠️ 出發前優先確認</h2><ul class="mini-list">
 <li><b>航班轉機：</b>去程河內轉機約2小時30分；回程約1小時15分，請以航空公司確認的行程單與登機證為準。</li>
@@ -42,11 +144,22 @@ main{padding:20px 14px 60px}.section{display:none}.section.active{display:block}
 <li><b>交通班次：</b>HARUKA、近鐵、JR、巴士及共享單車請出發前再確認。</li>
 <li><b>預約活動：</b>Chiikawa Bakery、任天堂博物館、朝日啤酒工廠及USJ活動以確認信／官方App為準。</li>
 </ul></div></div>
+<div class="card"><h2>⚔️ 隨行像素夥伴</h2><p class="small">參考你提供的《幻想水滸傳 II》遊戲畫面，把 16-bit 像素角色放進旅行手帳；保留藍底金框的經典選單感。</p><div class="party-roster"><div class="party-member"><img src="sprite-hero.png" alt="《幻想水滸傳 II》像素角色參考"><div><b>命運同行者</b><small>像素風格角色展示 · 旅程主視覺</small></div></div><div class="party-member"><img src="sprite-archer.png" alt="《幻想水滸傳 II》像素角色參考"><div><b>星辰旅伴</b><small>經典 16-bit 角色氛圍 · 章節陪伴</small></div></div></div></div>
 <div class="card"><h2>🧭 旅程章節</h2><div class="two-col">
 <div><h3>第一章｜大阪初見</h3><p class="small">10/31 梅田購物 → 11/1 大阪城、心齋橋 → 11/2 難波、電電城</p></div>
 <div><h3>第二章｜京都與古都</h3><p class="small">11/3 任天堂博物館、宇治、伏見稻荷 → 11/4 清水寺、祇園、奈良</p></div>
 <div><h3>第三章｜冒險與收藏</h3><p class="small">11/5 USJ → 11/6 朝日啤酒工廠、天神橋筋、難波購物</p></div>
 <div><h3>第四章｜最後的採購</h3><p class="small">11/7 天王寺、Chiikawa 快閃、臨空城 Outlet → 11/8 回馬來西亞</p></div>
+</div></div>
+<div class="card"><h2>✦ 108 星辰旅程章節</h2><p class="small">以命運之星為靈感，將每天旅程化作一個章節。點擊章節即可跳到當日行程。</p><div class="chapter-grid">
+<button class="chapter-card" onclick="openDay(0)"><b>第一章｜大阪初見</b><small>10/31 · 梅田購物、城市初探</small></button>
+<button class="chapter-card" onclick="openDay(1)"><b>第二章｜城與流行</b><small>11/1 · 大阪城、心齋橋</small></button>
+<button class="chapter-card" onclick="openDay(2)"><b>第三章｜收藏之路</b><small>11/2 · 難波、電電城</small></button>
+<button class="chapter-card" onclick="openDay(3)"><b>第四章｜宇治的星光</b><small>11/3 · 任天堂博物館、伏見</small></button>
+<button class="chapter-card" onclick="openDay(4)"><b>第五章｜古都遠征</b><small>11/4 · 京都、奈良</small></button>
+<button class="chapter-card" onclick="openDay(5)"><b>第六章｜冒險樂園</b><small>11/5 · USJ</small></button>
+<button class="chapter-card" onclick="openDay(6)"><b>第七章｜工廠與商街</b><small>11/6 · 吹田、天神橋筋</small></button>
+<button class="chapter-card" onclick="openDay(7)"><b>終章｜歸途之前</b><small>11/7–8 · 天王寺、臨空城、返程</small></button>
 </div></div>
 <div class="notice">本網站是依你提供的草稿製作的行程手帳，不代表即時核實過所有店鋪、交通班次或活動安排。出發前請再確認官方資訊；遇到排隊或交通延誤，優先保留已預約的活動與航班時間。</div>
 </section>
@@ -237,7 +350,69 @@ checkBooking:["確認 VN680／VN334 去程航班與轉機規則","確認 VN335�
 };
 function dateLabel(s){const d=new Date(s+"T12:00:00");return `${d.getMonth()+1}/${d.getDate()}（${["日","一","二","三","四","五","六"][d.getDay()]}）`}
 function renderDays(){const list=document.getElementById('dayList'),content=document.getElementById('dayContent');list.innerHTML='';days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-button'+(i===0?' active':'');b.innerHTML=`<b>${dateLabel(d.date)}</b><small>${d.title}</small>`;b.onclick=()=>selectDay(i);list.appendChild(b)});selectDay(0)}
-function selectDay(i){document.querySelectorAll('.day-button').forEach((b,j)=>b.classList.toggle('active',i===j));const d=days[i];const content=document.getElementById('dayContent');content.innerHTML=`<div class="day-head"><div class="eyebrow">${dateLabel(d.date)} · CHAPTER ${String(i+1).padStart(2,'0')}</div><h2>${d.title}</h2><div>${d.subtitle}</div></div><div class="timeline">${d.items.map(e=>{const url='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(e[4]);return `<article class="event"><div class="event-top"><div><h3>${e[1]}</h3></div><span class="time">${e[0]}</span></div><p>${e[2]}</p><div class="tags"><span class="tag">${e[3]}</span></div><a href="${url}" target="_blank" rel="noopener">📍 Google Maps 導航</a></article>`}).join('')}</div>`}
+const routePlans={
+"2026-10-31":[
+{title:"關西機場 → 大阪站／梅田",from:"JR 關西機場站（KIX）",to:"JR 大阪站",line:"JR 特急 HARUKA（依當日停靠與班次確認）",time:"約 45–60 分鐘，另加出關與候車",transfer:"通常可直達大阪站；上車前確認列車目的地與停靠站",walk:"KIX T1 到 JR 車站約 5–10 分鐘；大阪站內步行約 5–15 分鐘",note:"原草稿的 08:08 班次不保證趕得上。請以當日可搭班次及車票為準。",query:"JR Kansai Airport Station to JR Osaka Station"},
+{title:"大阪站 → Grand Front／LINKS UMEDA",from:"JR 大阪站",to:"Grand Front Osaka／LINKS UMEDA",line:"步行",time:"約 5–15 分鐘",transfer:"無",walk:"大型車站商圈容易走錯出口，預留找路時間",note:"Komeda Kitty、UNIQLO、coca、GU 等點位分屬不同商場；依現場樓層指示移動。",query:"JR Osaka Station to Grand Front Osaka"},
+{title:"梅田 → 難波／BOOKOFF PLUS",from:"Osaka Metro 梅田站",to:"難波站／BOOKOFF PLUS なんば戎橋店",line:"御堂筋線（梅田 → 難波）",time:"地鐵約 9–12 分鐘；加站內步行約 10–20 分鐘",transfer:"直達，不需轉車",walk:"難波站出站後依地圖步行至店舖；車站地下街較複雜",note:"若改去惠美須町／新世界，需按酒店實際位置另規劃回程。",query:"Osaka Metro Umeda Station to BOOKOFF PLUS Namba Ebisubashi"}
+],
+"2026-11-01":[
+{title:"新世界 → 大阪城公園森之宮側",from:"動物園前站",to:"森之宮站",line:"御堂筋線至本町；轉中央線至森之宮",time:"約 25–35 分鐘，另加轉乘步行",transfer:"本町站轉乘一次",walk:"森之宮站至 Road Train 乘車點約 5–15 分鐘，依入口位置而定",note:"大阪城公園範圍大；先確認 Road Train 當日停靠站及運行狀況。",query:"Dobutsuen-mae Station to Morinomiya Station Osaka"},
+{title:"大阪城天守閣 → MIRAIZA 大阪城",from:"大阪城天守閣周邊",to:"MIRAIZA 大阪城 B1F",line:"步行",time:"約 5–10 分鐘",transfer:"無",walk:"園區內步行；依人流、樓梯與入口位置調整",note:"天守閣與博物館參觀時間可能因排隊而延長。",query:"Osaka Castle Main Tower to Miraiza Osaka Castle"},
+{title:"森之宮 → 心齋橋",from:"森之宮站",to:"心齋橋站",line:"中央線至本町；轉御堂筋線至心齋橋",time:"約 15–25 分鐘含轉乘",transfer:"本町站轉乘一次",walk:"心齋橋站至 PARCO 通常數分鐘，依出口而定",note:"若在大阪城行程延誤，可刪減午餐後的彈性時間，不要壓縮已購門票的入場要求。",query:"Morinomiya Station to Shinsaibashi Station Osaka"},
+{title:"心齋橋 → 道頓堀 → 新世界",from:"心齋橋 PARCO／大丸心齋橋",to:"道頓堀；再回動物園前站",line:"步行；回程御堂筋線難波 → 動物園前",time:"心齋橋至道頓堀約 10–15 分鐘；難波至動物園前地鐵約 5 分鐘",transfer:"道頓堀步行；回程可從難波站搭御堂筋線直達動物園前",walk:"商店街人多，預留額外時間",note:"商場通常 20:00 左右閉店，請以店家當日營業公告為準。",query:"Shinsaibashi PARCO to Dotonbori Osaka"}
+],
+"2026-11-02":[
+{title:"新世界 → 難波八阪神社",from:"新世界住宿區",to:"難波八阪神社",line:"共享單車或步行／地鐵",time:"單車約 10–20 分鐘；交通時間依實際起點而異",transfer:"共享單車需先確認可租車及合法還車點；無車可改地鐵＋步行",walk:"神社周邊停車點至入口短距離步行",note:"日本橋電電城與難波購物區當天會大量步行；共享單車務必遵守停放規則。",query:"Shinsekai Osaka to Namba Yasaka Shrine"},
+{title:"難波八阪神社 → 日本橋電電城",from:"難波八阪神社",to:"日本橋筋商店街／Animate 大阪日本橋",line:"步行或共享單車",time:"步行約 15–25 分鐘；騎車時間依路線而定",transfer:"無；若騎車，先確認還車點有空位",walk:"電電城沿日本橋筋延伸，建議單向逛，避免來回折返",note:"多數店鋪約 10:00–11:00 陸續開門，提早到可先逛早開店。",query:"Namba Yasaka Shrine to Den Den Town Osaka"},
+{title:"電電城 → 難波購物區 → EDION",from:"日本橋筋商店街",to:"難波丸井／EDION 難波本店",line:"步行",time:"各點之間約 5–20 分鐘，依實際店址而定",transfer:"無",walk:"Rikuro’s、Wanaka、551 分店請用當日地圖確認，避免分店選錯",note:"熱門食品店排隊時間不固定；購物清單多時，優先保留 EDION 目標樓層。",query:"Den Den Town Osaka to EDION Namba Main Store"}
+],
+"2026-11-03":[
+{title:"新世界 → 大阪難波 → 近鐵小倉站",from:"動物園前站／住宿區",to:"近鐵小倉站（京都線）",line:"御堂筋線至難波，再步行轉近鐵；近鐵列車依班次往京都方向",time:"全程約 60–90 分鐘作規劃預留，須按當日班次核實",transfer:"至少包含地鐵與近鐵換乘；近鐵是否需在大和西大寺／丹波橋等站換車，依實際班次而定",walk:"大阪難波地鐵與近鐵站之間需預留站內步行",note:"請在導航中選「近鉄小倉駅」，不要誤選「JR 小倉駅」。博物館預約入場時間優先。",query:"Osaka-Namba Station to Kintetsu Ogura Station Kyoto"},
+{title:"任天堂博物館 → JR 小倉 → JR 宇治",from:"任天堂博物館／近鐵小倉站周邊",to:"JR 宇治站",line:"步行至 JR 小倉站；JR 奈良線至宇治站",time:"步行約 10–20 分鐘；JR 車程約 5–10 分鐘，依班次而定",transfer:"近鐵小倉與 JR 小倉是不同車站，需步行轉站",walk:"請預留車站間步行與候車時間",note:"博物館離場後先確認自己所在車站；宇治午餐時間較晚，建議先備選餐廳。",query:"JR Ogura Station Kyoto to JR Uji Station"},
+{title:"宇治 → JR 稻荷 → Chiikawa 伏見店／伏見稻荷",from:"JR 宇治站",to:"JR 稻荷站",line:"JR 奈良線往京都方向",time:"約 20–30 分鐘，依班次與停站而異",transfer:"部分列車／班次可能需要留意停靠站；上車前確認稻荷站停靠",walk:"JR 稻荷站至伏見稻荷大社入口很近；商店實際地址需確認",note:"若先購物再參拜，請留意商店最後入店時間與關門時間。",query:"JR Uji Station to JR Inari Station Kyoto"},
+{title:"JR 稻荷 → 京都站／酒店",from:"JR 稻荷站",to:"JR 京都站／Hotel Keihan Kyoto Grande",line:"JR 奈良線往京都站",time:"列車約 5 分鐘；加步行約 10–20 分鐘",transfer:"直達，不需轉車",walk:"酒店靠近京都站八條口一帶，出站後依導航前往",note:"京都站人流較多，入住前先確認酒店入口與行李安排。",query:"JR Inari Station to Hotel Keihan Kyoto Grande"}
+],
+"2026-11-04":[
+{title:"京都站 → 清水寺／五条坂",from:"京都站巴士總站",to:"五条坂巴士站",line:"京都市巴士（依當日路線與站牌確認）",time:"車程常需約 15–30 分鐘，紅葉季可能更久",transfer:"一般可搭往五条坂方向的巴士；依當日路線確認是否直達",walk:"五条坂至清水寺入口是上坡步行，約 15–25 分鐘",note:"早上出發時間緊湊；紅葉季巴士可能擁擠或塞車，必要時提早出門。",query:"Kyoto Station to Gojozaka Bus Stop Kiyomizu-dera"},
+{title:"清水寺 → 二年坂／三年坂 → 祇園",from:"清水寺",to:"祇園／花見小路",line:"全程步行",time:"約 1.5–2.5 小時，含拍照與商店停留",transfer:"無",walk:"坡道、石板路與人潮較多，穿舒適鞋；沿路順向移動避免折返",note:"如需按時搭車去奈良，祇園午餐與散步請保留彈性。",query:"Kiyomizu-dera to Gion Hanamikoji Kyoto walking"},
+{title:"祇園 → 京都站 → 近鐵奈良",from:"祇園周邊巴士站",to:"近鐵奈良站",line:"巴士至京都站；近鐵京都線往奈良方向",time:"巴士約 20–40 分鐘（交通狀況影響大）；近鐵約 35–50 分鐘",transfer:"京都站步行轉乘近鐵；預留 10–20 分鐘找站與候車",walk:"近鐵奈良站至奈良公園約 10–15 分鐘",note:"原稿 12:15 才離開祇園、13:15 轉車，緩衝偏少；巴士延誤會影響奈良行程。",query:"Gion Kyoto to Kintetsu Nara Station"},
+{title:"奈良公園／東大寺／春日大社 → 大阪難波",from:"春日大社或奈良公園",to:"近鐵奈良站 → 大阪難波站",line:"步行回近鐵奈良；近鐵奈良線往大阪難波",time:"步行回站約 20–40 分鐘；列車約 35–45 分鐘",transfer:"近鐵通常有直達或少換乘班次，請確認列車終點與時刻",walk:"奈良公園景點間步行距離較長；春日大社後回車站要留時間",note:"原稿 17:45 後到 20:00 才搭車有彈性；請確認東大寺及春日大社最後入場時間。",query:"Kasuga Taisha to Kintetsu Nara Station"}
+],
+"2026-11-05":[
+{title:"日本橋 → USJ（環球城站）",from:"近鐵日本橋／大阪 Metro 日本橋站",to:"JR Universal City／環球城站",line:"大阪 Metro 千日前線至難波；阪神難波線至西九條；JR 夢咲線至環球城",time:"約 35–50 分鐘，不含等車與站內步行",transfer:"難波轉阪神；西九條轉 JR 夢咲線，通常需兩次轉乘",walk:"環球城站至 USJ 入口步行約 5–10 分鐘，另加安檢排隊",note:"原稿安排 10:30 入園，若要早餐吃多間店，請預留刪減選項；USJ 活動時刻以官方 App 為準。",query:"Nihonbashi Osaka Station to Universal City Station"},
+{title:"USJ → 難波／新世界",from:"JR 環球城站",to:"大阪難波／動物園前",line:"JR 夢咲線至西九條；阪神難波線至大阪難波，再依住宿位置步行或搭地鐵",time:"約 35–55 分鐘",transfer:"西九條轉乘；回新世界可再轉御堂筋線或從合適車站步行",walk:"園區離場人潮可能增加站內步行時間",note:"若夜間活動延後，建議優先返回住宿，不必硬排道頓堀。",query:"Universal City Station to Osaka-Namba Station"}
+],
+"2026-11-06":[
+{title:"新今宮 → JR 吹田站／朝日啤酒博物館",from:"JR 新今宮站",to:"JR 吹田站",line:"JR 大阪環狀線至大阪站；轉 JR 京都線／東海道本線往吹田方向",time:"列車約 25–40 分鐘，另加轉乘與步行",transfer:"大阪站換乘一次；請確認月台與列車停靠站",walk:"JR 吹田站至朝日啤酒博物館步行時間以預約通知／官方地圖為準",note:"以預約確認信中的報到時間倒推出發；不要只依草稿的「早上」估算。",query:"Shin-Imamiya Station to Asahi Beer Museum Suita"},
+{title:"吹田 → 天神橋筋商店街／大阪天滿宮",from:"JR 吹田站",to:"天神橋筋商店街、COBATOPAN、大阪天滿宮",line:"JR 返回大阪市區；按目的地使用 JR 天滿／大阪天滿宮或 Osaka Metro 扇町／南森町",time:"視第一站選擇約 30–60 分鐘",transfer:"可能需在大阪站換乘；商店街很長，請先選定入口與目的地",walk:"天神橋筋商店街與大阪天滿宮之間步行距離依所在區段而異",note:"先確認 COBATOPAN 的確切地址，再決定先逛商店街哪一段，避免往返。",query:"JR Suita Station to Osaka Tenmangu Shrine"},
+{title:"南森町／扇町 → 難波",from:"南森町站或扇町站",to:"難波站／難波 CITY",line:"南森町可搭堺筋線至日本橋再步行／轉乘；扇町可步行至天滿站搭 JR 至難波方向需換乘，或改搭地鐵",time:"約 20–35 分鐘，依起點及選線而異",transfer:"依實際出發站與路線，通常需一次轉乘或站間步行",walk:"難波 CITY 連接南海難波站與地下街；按目的店鋪選出口",note:"導航請用當時位置重新規劃，不要把南森町與扇町視作同一車站。",query:"Minamimorimachi Station to Namba CITY Osaka"}
+],
+"2026-11-07":[
+{title:"新世界 → 天王寺動物園／MIO",from:"動物園前站／新今宮站",to:"天王寺動物園、天王寺 MIO",line:"步行或 Osaka Metro 一站至天王寺；JR 天王寺站連接 MIO",time:"步行約 10–20 分鐘，或地鐵加步行約 10–15 分鐘",transfer:"可步行直達；帶行李時請優先找電梯與無障礙通道",walk:"動物園出入口與 MIO/JR 站區需預留步行時間",note:"行李先確認可寄放位置。Chiikawa 快閃店是否營業、樓層與整理券需以官方公告核實。",query:"Tennoji Zoo to Tennoji MIO"},
+{title:"天王寺 → 臨空城站",from:"JR 天王寺站",to:"JR／南海 臨空城站（Rinku Town）",line:"JR 關空快速（部分班次直達；確認目的地與停靠站）",time:"約 45–60 分鐘，依班次而定",transfer:"若所搭班次不直達，按站內指示換乘；上車前確認列車是否停臨空城",walk:"臨空城站至關西機場華盛頓酒店約 5–10 分鐘左右，依出口與行李而定",note:"原稿的 14:00 出發前往臨空城，需配合 Chiikawa 購物及退房寄物安排。",query:"JR Tennoji Station to Rinku Town Station"},
+{title:"酒店 → 臨空城 Outlet → 酒店",from:"關西機場華盛頓酒店",to:"Rinku Premium Outlets",line:"步行／依當日接駁資訊",time:"步行約 5–15 分鐘，依酒店入口與通道而定",transfer:"無需電車；若搭接駁車請核對班次與乘車點",walk:"購物區較大，閉店時間以官方公告為準",note:"先辦理寄存／入住，再帶輕便隨身包去 Outlet。",query:"Kansai Airport Washington Hotel to Rinku Premium Outlets"}
+],
+"2026-11-08":[
+{title:"酒店 → 關西機場 T1",from:"關西機場華盛頓酒店",to:"KIX 第 1 航廈",line:"酒店接駁巴士優先；另備計程車／電車方案",time:"依酒店當日班次；預留至少 15–30 分鐘交通緩衝",transfer:"搭車前確認是否需預約、乘車地點與首班時間",walk:"抵達 T1 後仍需前往航空公司櫃檯、安檢及登機口",note:"VN335 10:00 起飛。請以越南航空要求的報到時間為準；不要把 07:00 抵達後的免稅購物當作必做行程。",query:"Kansai Airport Washington Hotel to Kansai International Airport Terminal 1"},
+{title:"河內轉機：VN335 → VN681",from:"河內機場 T2",to:"VN681 登機口",line:"依機場轉機指示",time:"約 1 小時 15 分鐘轉機窗口（依你提供的航班資料）",transfer:"確認行李直掛、是否需重新安檢及登機截止時間；按 Transfer 指示前往",walk:"航廈內距離與登機口以當日資訊為準",note:"這段轉機時間較短，落地後優先跟隨轉機指示，不建議停留購物。",query:"Noi Bai International Airport Terminal 2 transfer"}
+]
+};
+function openDay(i){document.querySelector('[data-tab="days"]').click();selectDay(i);}
+function routeCard(r){const url='https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(r.from)+'&destination='+encodeURIComponent(r.to)+'&travelmode=transit';const search='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(r.query||r.to);return `<article class="route-card"><h4>✦ ${r.title}</h4><p><b>上車／起點：</b>${r.from}</p><p><b>下車／目的地：</b>${r.to}</p><p><b>路線：</b>${r.line}</p><div class="route-meta"><span class="route-chip">⏱ ${r.time}</span><span class="route-chip">🔁 ${r.transfer}</span></div><p><b>步行：</b>${r.walk}</p><p><b>提醒：</b>${r.note}</p><a href="${url}" target="_blank" rel="noopener">🧭 開啟交通路線</a> <a href="${search}" target="_blank" rel="noopener">📍 查看地點</a></article>`}
+function parchmentMap(d){
+ const picks=d.items.slice(0,Math.min(7,d.items.length));
+ const pts=[[54,76],[150,45],[255,82],[354,48],[454,95],[550,56],[650,88]];
+ const used=picks.map((e,i)=>({...e,pt:pts[i],n:i+1}));
+ const path=used.map((x,i)=>(i?'L':'M')+x.pt[0]+' '+x.pt[1]).join(' ');
+ const trees=[[30,130],[95,155],[210,130],[300,155],[410,142],[520,145],[610,135],[690,150],[185,35],[390,35],[580,32]];
+ const treeSvg=trees.map(([x,y])=>`<g transform="translate(${x} ${y})"><path d="M0 0 l-9 14 h6 l-4 8 h14 l-4-8 h6z" fill="#667344" stroke="#4e5630" stroke-width="1.5"/><rect x="-2" y="21" width="4" height="5" fill="#76502b"/></g>`).join('');
+ const nodes=used.map(x=>`<g><rect x="${x.pt[0]-7}" y="${x.pt[1]-7}" width="14" height="14" fill="#873d2a" stroke="#f5dfac" stroke-width="2"/><text x="${x.pt[0]}" y="${x.pt[1]+.5}" class="map-number">${x.n}</text><text x="${x.pt[0]}" y="${x.pt[1]+22}" class="map-stop">${String(x[1]).replace(/[&<>"']/g,'').slice(0,13)}</text></g>`).join('');
+ return `<section class="parchment-map"><h3>🗺️ 今日の冒険地図 · 冒險地圖</h3><p class="map-caption">${dateLabel(d.date)}｜羊皮紙示意地圖 · 角色沿今日路線巡行（非實際比例）</p><svg class="overworld-svg" viewBox="0 0 720 190" role="img" aria-label="羊皮紙風旅遊地圖，像素旅伴沿景點路線移動"><defs><pattern id="mapGrid" width="12" height="12" patternUnits="userSpaceOnUse"><path d="M12 0H0V12" fill="none" stroke="#8c7045" stroke-opacity=".12" stroke-width=".6"/></pattern></defs><rect width="720" height="190" fill="url(#mapGrid)"/><path d="M0 170 Q130 145 210 178 T420 169 T720 170" fill="none" stroke="#77929a" stroke-width="17" opacity=".42"/><path d="M0 170 Q130 145 210 178 T420 169 T720 170" fill="none" stroke="#f1e0b1" stroke-width="2" stroke-dasharray="5 5" opacity=".9"/><path d="M15 20 Q100 5 160 24 T330 20 T510 22 T700 16" fill="none" stroke="#a88c5a" stroke-width="2" stroke-dasharray="3 5"/>${treeSvg}<path d="${path}" fill="none" stroke="#f7e8c5" stroke-width="9" stroke-linecap="round" stroke-linejoin="round"/><path d="${path}" fill="none" stroke="#9a663b" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round"/><text x="18" y="18" font-size="10" fill="#75532c" font-family="monospace">OSAKA / KYOTO QUEST</text>${nodes}<g class="pixel-party"><g transform="translate(0 0)"><rect x="-5" y="-18" width="10" height="7" fill="#34251e"/><rect x="-7" y="-12" width="14" height="8" fill="#b85c3e"/><rect x="-5" y="-10" width="3" height="3" fill="#f5d7a0"/><rect x="2" y="-10" width="3" height="3" fill="#f5d7a0"/><rect x="-6" y="-4" width="12" height="8" fill="#315c91"/><rect x="-7" y="4" width="5" height="7" fill="#49382b"/><rect x="2" y="4" width="5" height="7" fill="#49382b"/><rect x="-10" y="-2" width="4" height="8" fill="#e3c27a"/><rect x="6" y="-2" width="4" height="8" fill="#e3c27a"/><animateMotion dur="18s" repeatCount="indefinite" rotate="auto"><mpath href="#journeyPath"/></animateMotion></g></g><path id="journeyPath" d="${path}" fill="none" stroke="none"/></svg><div class="map-legend"><span>■ 今日の目的地／景點</span><span>▰ 行走路線</span><span>▣ 像素旅伴巡行中</span></div></section>`;
+}
+
+function selectDay(i){document.querySelectorAll('.day-button').forEach((b,j)=>b.classList.toggle('active',i===j));const d=days[i];const content=document.getElementById('dayContent');const routes=routePlans[d.date]||[];content.innerHTML=`<div class="day-head"><div class="chapter-mark"><span>✦</span> ${dateLabel(d.date)} · FATE STAR CHAPTER ${String(i+1).padStart(2,'0')}</div><h2>${d.title}</h2><div>${d.subtitle}</div></div>${parchmentMap(d)}<div class="route-panel"><h3>🚆 今日交通攻略</h3><p class="route-intro">整理主要移動段的起點、下車站、路線、轉乘與步行估時。所有時間均為規劃估算，不是即時班次；請在出發當天用 Google Maps／乘換案內確認。</p><div class="route-grid">${routes.map(routeCard).join('')||'<p>此日主要為步行或航班移動，請使用下方地圖按鈕確認現場路線。</p>'}</div><div class="route-caution">⚠️ 交通估時會受班次、紅葉季人潮、排隊及出口位置影響。遇到已預約活動，請優先保留入場時間。</div></div><div class="star-divider">✦ DAILY QUEST LOG ✦</div><div class="timeline">${d.items.map((e,idx)=>{const url='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(e[4]);const origin=idx===0?'住一新世界 大阪':d.items[idx-1][4];const mode=String(e[3]).includes('步行')?'walking':(String(e[3]).includes('JR')||String(e[3]).includes('地鐵')||String(e[3]).includes('電車')||String(e[3]).includes('近鐵')||String(e[3]).includes('巴士')||String(e[3]).includes('Metro')?'transit':'walking');const dir='https://www.google.com/maps/dir/?api=1&origin='+encodeURIComponent(origin)+'&destination='+encodeURIComponent(e[4])+'&travelmode='+mode;return `<article class="event"><div class="event-top"><div><h3>${e[1]}</h3></div><span class="time">${e[0]}</span></div><p>${e[2]}</p><div class="tags"><span class="tag">${e[3]}</span></div><div class="map-actions"><a href="${dir}" target="_blank" rel="noopener">🧭 從上一站導航</a><a href="${url}" target="_blank" rel="noopener">📍 Google Maps 地點</a></div></article>`}).join('')}</div>`}
+
 document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===b.dataset.tab));window.scrollTo({top:0,behavior:'smooth'})}));
 renderDays();
 function renderChecks(){Object.entries(checklist).forEach(([id,items])=>{const el=document.getElementById(id);el.innerHTML=items.map((x,i)=>{const key='osaka26_'+id+'_'+i;const checked=localStorage.getItem(key)==='1';return `<label class="checkrow ${checked?'done':''}"><input type="checkbox" ${checked?'checked':''} data-key="${key}"><span>${x}</span></label>`}).join('');el.querySelectorAll('input').forEach(c=>c.onchange=()=>{localStorage.setItem(c.dataset.key,c.checked?'1':'0');c.parentElement.classList.toggle('done',c.checked)})})}
