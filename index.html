@@ -1,0 +1,255 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#142b2a">
+<meta name="description" content="2026 大阪・京都旅行物語｜互動旅遊手帳">
+<title>幻想水滸傳風・2026 大阪旅行物語</title>
+<style>
+:root{--ink:#17312f;--deep:#102523;--jade:#315e50;--gold:#d7b66d;--paper:#f6f0df;--paper2:#fffaf0;--rust:#a64e39;--muted:#66756c;--line:#d8ceb3;--shadow:0 10px 30px #10252318}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;background:var(--paper);color:var(--ink);font-family:ui-serif,"Noto Serif TC","Songti TC",serif;line-height:1.55}
+button,input,textarea{font:inherit}button{cursor:pointer}
+.hero{background:radial-gradient(ellipse at 75% 20%,#527968 0,transparent 35%),linear-gradient(135deg,#102523,#21473d 60%,#152d2b);color:#fff8e8;padding:30px 18px 24px;position:relative;overflow:hidden;border-bottom:4px solid var(--gold)}
+.hero:after{content:"✦　☯　✦";position:absolute;right:-10px;bottom:-22px;font-size:84px;color:#d7b66d18;letter-spacing:8px;transform:rotate(-12deg);pointer-events:none}
+.wrap{max-width:1120px;margin:auto}.eyebrow{color:var(--gold);letter-spacing:.18em;font-size:.76rem;text-transform:uppercase}.hero h1{font-size:clamp(2rem,6vw,3.6rem);line-height:1.15;margin:10px 0 8px;letter-spacing:.06em}.hero p{margin:0;max-width:680px;color:#e6e5d8}.hero-meta{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.pill{border:1px solid #d7b66d75;border-radius:99px;padding:5px 11px;font-size:.82rem;color:#fff4d7;background:#ffffff0a}
+.nav{position:sticky;top:0;z-index:10;background:#f6f0e9ed;backdrop-filter:blur(12px);border-bottom:1px solid var(--line);overflow:auto}.nav-inner{display:flex;gap:7px;padding:10px 14px;max-width:1120px;margin:auto;min-width:max-content}.nav button{border:1px solid transparent;background:transparent;color:var(--ink);border-radius:999px;padding:8px 13px}.nav button.active,.nav button:hover{background:var(--ink);color:#fff8e8}
+main{padding:20px 14px 60px}.section{display:none}.section.active{display:block}.intro-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:16px}.card{background:var(--paper2);border:1px solid var(--line);border-radius:16px;padding:18px;box-shadow:var(--shadow);margin-bottom:15px}.card h2,.card h3{margin:0 0 10px}.card h2{font-size:1.3rem}.card h3{font-size:1.05rem}.goldline{height:2px;background:linear-gradient(90deg,var(--gold),transparent);margin:12px 0}.stat-row{display:grid;grid-template-columns:repeat(3,1fr);gap:10px}.stat{padding:13px 10px;border-radius:12px;background:#e9e4d2;text-align:center}.stat strong{display:block;font-size:1.3rem;color:var(--jade)}.stat small{color:var(--muted)}.notice{border-left:4px solid var(--rust);padding:10px 12px;background:#f5e7da;border-radius:0 10px 10px 0;font-size:.92rem}.mini-list{padding-left:18px;margin:8px 0}.mini-list li{margin:5px 0}.day-layout{display:grid;grid-template-columns:250px 1fr;gap:16px}.day-list{position:sticky;top:64px;align-self:start}.day-button{display:block;width:100%;text-align:left;border:1px solid var(--line);background:#fffaf0;border-radius:12px;padding:11px 12px;margin:7px 0;color:var(--ink)}.day-button.active{background:var(--ink);color:#fff8e8;border-color:var(--gold)}.day-button small{display:block;opacity:.75}.day-head{background:linear-gradient(120deg,#1b3b34,#315e50);color:#fff8e8;border-radius:16px;padding:18px;margin-bottom:14px}.day-head h2{margin:0 0 5px}.timeline{position:relative;padding-left:20px}.timeline:before{content:"";position:absolute;left:7px;top:8px;bottom:8px;width:2px;background:var(--gold)}.event{position:relative;margin:0 0 12px;background:var(--paper2);border:1px solid var(--line);border-radius:12px;padding:13px 14px;box-shadow:0 4px 14px #1025230a}.event:before{content:"";position:absolute;left:-19px;top:18px;width:10px;height:10px;background:var(--rust);border:2px solid var(--paper);border-radius:50%}.event-top{display:flex;gap:10px;align-items:flex-start;justify-content:space-between}.event h3{margin:0;font-size:1rem}.time{font-weight:700;color:var(--rust);white-space:nowrap;font-variant-numeric:tabular-nums}.event p{margin:6px 0;color:#485b52;font-size:.92rem}.event .tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:8px}.tag{background:#e8e2cf;color:#355246;border-radius:99px;padding:3px 8px;font-size:.75rem}.event a,.linkbtn{display:inline-block;color:#fff8e8;background:var(--jade);text-decoration:none;border-radius:8px;padding:6px 10px;font-size:.82rem;margin-top:7px}.event a:hover,.linkbtn:hover{background:var(--rust)}.two-col{display:grid;grid-template-columns:1fr 1fr;gap:15px}.checkrow{display:flex;gap:10px;align-items:flex-start;padding:9px 0;border-bottom:1px solid #e8dfc9}.checkrow input{margin-top:5px;accent-color:var(--jade);width:18px;height:18px}.checkrow.done span{text-decoration:line-through;color:#879087}.field{width:100%;padding:10px;border:1px solid var(--line);border-radius:9px;background:#fffdf7;color:var(--ink);margin:5px 0 10px}.btn{border:0;background:var(--ink);color:#fff8e8;padding:9px 13px;border-radius:9px}.btn.secondary{background:#e6dfcc;color:var(--ink);border:1px solid var(--line)}.small{font-size:.84rem;color:var(--muted)}.flight{display:grid;grid-template-columns:1fr auto 1fr;gap:12px;align-items:center;padding:12px 0;border-bottom:1px solid var(--line)}.flight:last-child{border:0}.airport{text-align:center}.airport strong{font-size:1.15rem}.arrow{text-align:center;color:var(--rust);font-size:1.3rem}.table-wrap{overflow:auto}table{width:100%;border-collapse:collapse;min-width:500px}th,td{text-align:left;padding:10px;border-bottom:1px solid var(--line);vertical-align:top}th{background:#e9e2cf}.footer{text-align:center;padding:25px 12px;background:var(--deep);color:#e7dfc7;font-size:.82rem}.footer span{color:var(--gold)}.hidden{display:none!important}
+@media(max-width:760px){.intro-grid,.two-col{grid-template-columns:1fr}.day-layout{grid-template-columns:1fr}.day-list{position:static;display:flex;overflow:auto;gap:7px;padding-bottom:5px}.day-button{min-width:155px;margin:0}.stat-row{gap:6px}.stat{padding:10px 5px}.event-top{display:block}.time{display:block;margin-bottom:3px}.hero{padding-top:25px}}
+@media print{.nav,.day-list,.btn,.linkbtn{display:none!important}body{background:white}.section{display:block!important}.card,.event{box-shadow:none;break-inside:avoid}.day-layout{display:block}.hero{print-color-adjust:exact}}
+</style>
+</head>
+<body>
+<header class="hero"><div class="wrap">
+<div class="eyebrow">A JOURNEY OF DESTINY · 2026</div>
+<h1>大阪・京都旅行物語</h1>
+<p>一段旅程，一段回憶。以幻想水滸傳的古典奇幻與星辰冒險感，記錄這趟大阪、京都與奈良之旅。</p>
+<div class="hero-meta"><span class="pill">📅 2026.10.30 — 11.08</span><span class="pill">✈️ Vietnam Airlines</span><span class="pill">🏯 大阪・宇治・京都・奈良</span><span class="pill">📱 手機友善版</span></div>
+</div></header>
+<nav class="nav"><div class="nav-inner">
+<button class="active" data-tab="home">✦ 旅程總覽</button><button data-tab="days">📜 每日行程</button><button data-tab="flights">✈️ 航班資訊</button><button data-tab="checklist">🎒 行前清單</button><button data-tab="budget">💰 消費手帳</button><button data-tab="notes">📝 旅行備忘</button>
+</div></nav>
+<main class="wrap">
+<section class="section active" id="home">
+<div class="intro-grid">
+<div class="card"><h2>✦ 旅程序章</h2><div class="goldline"></div>
+<p>這份互動手帳把你的行程整理成每日時間軸。可在手機上切換日期、打開地圖導航、勾選行前用品，也能記錄旅費與旅途心得。</p>
+<div class="stat-row"><div class="stat"><strong>10天</strong><small>旅程跨度</small></div><div class="stat"><strong>4地</strong><small>大阪・宇治・京都・奈良</small></div><div class="stat"><strong>3項</strong><small>已購／預約活動</small></div></div>
+</div>
+<div class="card"><h2>⚠️ 出發前優先確認</h2><ul class="mini-list">
+<li><b>航班轉機：</b>去程河內轉機約2小時30分；回程約1小時15分，請以航空公司確認的行程單與登機證為準。</li>
+<li><b>行程日期：</b>以下按2026年日曆整理；原稿部分星期標註有誤，網站以實際日期為準。</li>
+<li><b>交通班次：</b>HARUKA、近鐵、JR、巴士及共享單車請出發前再確認。</li>
+<li><b>預約活動：</b>Chiikawa Bakery、任天堂博物館、朝日啤酒工廠及USJ活動以確認信／官方App為準。</li>
+</ul></div></div>
+<div class="card"><h2>🧭 旅程章節</h2><div class="two-col">
+<div><h3>第一章｜大阪初見</h3><p class="small">10/31 梅田購物 → 11/1 大阪城、心齋橋 → 11/2 難波、電電城</p></div>
+<div><h3>第二章｜京都與古都</h3><p class="small">11/3 任天堂博物館、宇治、伏見稻荷 → 11/4 清水寺、祇園、奈良</p></div>
+<div><h3>第三章｜冒險與收藏</h3><p class="small">11/5 USJ → 11/6 朝日啤酒工廠、天神橋筋、難波購物</p></div>
+<div><h3>第四章｜最後的採購</h3><p class="small">11/7 天王寺、Chiikawa 快閃、臨空城 Outlet → 11/8 回馬來西亞</p></div>
+</div></div>
+<div class="notice">本網站是依你提供的草稿製作的行程手帳，不代表即時核實過所有店鋪、交通班次或活動安排。出發前請再確認官方資訊；遇到排隊或交通延誤，優先保留已預約的活動與航班時間。</div>
+</section>
+<section class="section" id="days"><div class="day-layout"><aside class="day-list" id="dayList"></aside><div id="dayContent"></div></div></section>
+<section class="section" id="flights">
+<div class="card"><h2>✈️ 去程｜2026年10月30–31日</h2>
+<div class="flight"><div class="airport"><small>10/30 · 20:10</small><br><strong>KUL T1</strong><br><small>吉隆坡國際機場</small></div><div class="arrow">VN680 →</div><div class="airport"><small>10/30 · 22:30</small><br><strong>HAN T2</strong><br><small>河內轉機（-1小時時差標註依票面）</small></div></div>
+<p class="small">河內轉機約2小時30分鐘。下一段：VN334，10/31 01:00 河內 T2 起飛，06:55 抵達關西機場 T1。托運行李額度：23kg（依票券規則確認）。</p>
+<div class="flight"><div class="airport"><small>10/31 · 01:00</small><br><strong>HAN T2</strong></div><div class="arrow">VN334 →</div><div class="airport"><small>10/31 · 06:55</small><br><strong>KIX T1</strong></div></div></div>
+<div class="card"><h2>✈️ 回程｜2026年11月8日</h2>
+<div class="flight"><div class="airport"><small>11/8 · 10:00</small><br><strong>KIX T1</strong></div><div class="arrow">VN335 →</div><div class="airport"><small>11/8 · 13:35</small><br><strong>HAN T2</strong></div></div>
+<p class="small">河內轉機約1小時15分鐘。下一段：VN681，11/8 14:50 河內 T2 起飛，19:10 抵達 KLIA T1。請確認兩段航班是否為聯程票、行李是否直掛，以及轉機時是否需要重新安檢。</p>
+<div class="notice">建議回程前一晚入住臨空城／關西機場附近。回程當天以航空公司要求的報到時間為準，勿只按「起飛前一小時」安排。</div></div>
+</section>
+<section class="section" id="checklist"><div class="two-col">
+<div class="card"><h2>📄 證件與交通</h2><div id="checkTravel"></div></div>
+<div class="card"><h2>🔌 行李與日常</h2><div id="checkPack"></div></div>
+</div><div class="card"><h2>🎟️ 預約／票券再次確認</h2><div id="checkBooking"></div><p class="small">勾選狀態會儲存在這台裝置的瀏覽器中。</p><button class="btn secondary" onclick="resetChecks()">重設勾選</button></div></section>
+<section class="section" id="budget"><div class="two-col">
+<div class="card"><h2>💴 新增一筆消費</h2><label>日期</label><input class="field" id="spDate" type="date" value="2026-10-31"><label>項目</label><input class="field" id="spName" placeholder="例如：午餐、動漫周邊"><label>金額（日圓）</label><input class="field" id="spAmount" type="number" min="0" placeholder="例如：1800"><label>分類</label><select class="field" id="spCat"><option>餐飲</option><option>交通</option><option>購物</option><option>門票</option><option>住宿</option><option>其他</option></select><button class="btn" onclick="addExpense()">＋ 記錄消費</button></div>
+<div class="card"><h2>📊 消費統計</h2><div class="stat-row"><div class="stat"><strong id="totalSpend">¥0</strong><small>總消費</small></div><div class="stat"><strong id="spCount">0</strong><small>筆數</small></div><div class="stat"><strong id="avgSpend">¥0</strong><small>每筆平均</small></div></div><p class="small">只統計你在此手帳新增的支出，不包含機票或預先付款，除非你自行記錄。</p></div></div>
+<div class="card"><h2>🧾 消費紀錄</h2><div class="table-wrap"><table><thead><tr><th>日期</th><th>項目</th><th>分類</th><th>金額</th><th>操作</th></tr></thead><tbody id="expenseRows"></tbody></table></div><button class="btn secondary" onclick="exportExpenses()">匯出 CSV</button></div></section>
+<section class="section" id="notes"><div class="card"><h2>📝 旅途備忘</h2><p class="small">可記錄購物清單、店鋪位置、預約編號提醒（請勿輸入護照號碼、信用卡等敏感資料）。內容會保存在目前裝置的瀏覽器。</p><textarea class="field" id="memo" rows="12" placeholder="例如：想買的限定商品、餐廳候補、旅途心得……"></textarea><button class="btn" onclick="saveMemo()">儲存備忘</button><span id="memoStatus" class="small"></span></div>
+<div class="card"><h2>🗺️ 常用地圖入口</h2><div class="two-col">
+<a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=関西空港駅">JR 關西機場站</a><a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=住一新世界">住一新世界</a><a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=大阪城天守閣">大阪城天守閣</a><a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=心斎橋PARCO">心齋橋 PARCO</a><a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=ニンテンドーミュージアム">任天堂博物館</a><a class="linkbtn" target="_blank" href="https://www.google.com/maps/search/?api=1&query=ユニバーサル・スタジオ・ジャパン">USJ</a>
+</div></div></section>
+</main>
+<footer class="footer"><div>✦ <span>星辰指引旅人，記憶編成命運。</span> ✦</div><div>大阪・京都旅行物語 · 2026 · 個人旅遊手帳</div><div>日期與行程依旅人提供資料整理；即時資訊請以官方公告為準。</div></footer>
+<script>
+const days=[
+{date:"2026-10-31",title:"梅田購物・大阪初抵",subtitle:"抵達關西機場｜Tax Free 購物 Day",items:[
+["06:55","🛬 抵達關西機場","抵達 KIX T1，入境、取行李；實際出關時間視排隊而定。","機場","関西国際空港 第1ターミナル"],
+["07:00–08:00","🧳 入境＋取行李","辦理入境、取行李、前往鐵路車站。","步行","関西空港駅"],
+["08:00–08:20","🚶 前往 JR 關西機場站","跟隨 JR 指示；先確認 HARUKA 當天班次及月台。","步行","関西空港駅 JR"],
+["08:20–09:10","🚄 HARUKA → 大阪站","以實際可搭班次為準；不要假設一定趕得上原定班次。","JR 特急","JR大阪駅"],
+["09:10–09:25","🚶 前往 Komeda Kitty 大阪店","前往 GRAND FRONT 大阪 B1F；請再次核對店名、樓層與開店時間。","步行","GRAND FRONT OSAKA"],
+["09:25–10:00","☕ Komeda Kitty 大阪店","早餐、咖啡。你提供的營業時間與店名資料仍建議出發前核實。","早餐","コメダ珈琲店 GRAND FRONT 大阪"],
+["10:00–11:10","🛍️ UNIQLO UMEDA","LINKS UMEDA 1–2F，集中試穿、結帳。","步行","LINKS UMEDA UNIQLO"],
+["11:10–11:35","👗 coca LINKS UMEDA","平價女裝，LINKS UMEDA 5F（樓層請再確認）。","步行","coca LINKS UMEDA"],
+["11:35–12:00","👕 GU LINKS UMEDA","同棟購物，避免重複走動。","步行","GU LINKS UMEDA"],
+["12:00–13:00","🍜 桐麺 梅田店","午餐；熱門時段可能排隊。","步行","桐麺 梅田店"],
+["13:00–14:15","🛋️ MUJI GRAND FRONT 大阪","家居、文具；你提供資料為11:00開門。","步行","無印良品 グランフロント大阪"],
+["14:15–14:35","🚶 前往茶屋町","從 GRAND FRONT 北館步行前往茶屋町。","步行","茶屋町 大阪"],
+["14:35–15:00","⛩️ 綱敷天神社御旅社","御朱印與哥吉拉御守庫存、受理時間請現場確認。","步行","綱敷天神社 御旅社"],
+["15:00–15:20","🚶 返回大阪站商圈","預留穿越車站商圈時間。","步行","大阪駅"],
+["15:20–16:10","🏴‍☠️ ONE PIECE 官方店","原稿標示 LUCUA SOUTH 13F，店名／樓層請出發前核實。","購物","ONE PIECE 麦わらストア 大阪"],
+["16:10–17:00","🛍️ 大丸梅田店","集中逛目標樓層。","步行","大丸梅田店"],
+["17:00–18:00","🐰 Chiikawa Bakery OSAKA","KITTE 大阪 3F；依你提供資料需事前預約，請確認預約時段。","預約／購物","ちいかわベーカリー OSAKA"],
+["18:00–19:00","🚇 大阪站 → 難波／日本橋方向","按實際目的地選擇御堂筋線或其他路線；不必先回酒店。","大阪 Metro","なんば駅"],
+["19:00–20:30","📚 BOOKOFF PLUS なんば戎橋店","2F書籍、遊戲等；樓層營業時間請以店方公告為準。","購物","BOOKOFF PLUS なんば戎橋店"],
+["20:30–21:30","🍜 難波／道頓堀晚餐","在 BOOKOFF 附近用餐；若購物超時可縮短散步。","步行","道頓堀"],
+["21:30–22:00","🏨 返回住一新世界","按實際酒店位置選擇步行或地鐵。","地鐵／步行","住一新世界"]]},
+{date:"2026-11-01",title:"大阪城・心齋橋 PARCO",subtitle:"大阪城天守閣、海洋堂、動漫購物",items:[
+["08:00–08:30","🚇 新世界出發","動物園前站搭御堂筋線至本町，換乘中央線至森之宮。","大阪 Metro","動物園前駅"],
+["08:30–09:10","☕ 珈琲館森之宮店早餐","出發前確認店鋪營業時間。","步行","珈琲館 森ノ宮店"],
+["09:10–09:30","🚶 前往 Road Train 乘車點","確認當天班次、路線及排隊情況。","步行","大阪城公園 ロードトレイン 森ノ宮駅"],
+["09:30–10:00","🚂 大阪城園內接駁","按現場指示搭乘或步行；營運及票價以當天公告為準。","Road Train／步行","大阪城公園 ロードトレイン"],
+["10:00–12:00","🏯 大阪城天守閣","參觀展覽及頂層觀景台；已購票。","步行／參觀","大阪城天守閣"],
+["12:00–12:10","🚶 前往 MIRAIZA 大阪城","從天守閣附近步行前往。","步行","MIRAIZA 大阪城"],
+["12:10–13:00","🧸 海洋堂模型博物館","MIRAIZA 大阪城 B1F；已透過 KKday 購票，確認入場安排。","室內參觀","海洋堂フィギュアミュージアム ミライザ大阪城"],
+["13:00–14:00","🍽️ 午餐","原稿寫「心齋橋附近」，但此時仍在大阪城區；建議在大阪城／森之宮先吃，避免繞路。","餐飲","大阪城公園 レストラン"],
+["14:00–14:30","🚇 前往心齋橋","森之宮→本町，換乘御堂筋線至心齋橋。","大阪 Metro","心斎橋駅"],
+["14:30–17:00","🛍️ 心齋橋 PARCO 動漫購物","優先5F、6F目標店；先買最想要的角色商品。","購物","心斎橋PARCO 5F 6F"],
+["17:00–19:40","🧸 大丸心齋橋本館","優先 Pokémon Center Osaka DX、JUMP SHOP；熱門店先逛。","購物","大丸心斎橋店 本館9F"],
+["19:40–20:00","🛍️ 最後採購與結帳","留意商場閉店時間。","購物","大丸心斎橋店"],
+["20:00–20:15","🚶 前往道頓堀","沿心齋橋筋往道頓堀方向。","步行","道頓堀"],
+["20:15–21:30","🌃 道頓堀夜遊＋晚餐","固力果跑跑人、運河沿岸、晚餐。","步行","道頓堀 グリコサイン"],
+["21:30以後","🚇 返回住一新世界","難波站搭御堂筋線至動物園前站，再步行回住宿。","大阪 Metro","動物園前駅"]]},
+{date:"2026-11-02",title:"難波八阪・電電城・難波購物",subtitle:"神社打卡、動漫周邊與大阪名物",items:[
+["07:45–08:00","🚲 酒店附近租借共享單車","確認車輛、電量及合法還車點；如不方便則步行／搭車。","共享單車","新世界 共享サイクル"],
+["08:00–08:20","🚲 前往難波八阪神社","注意行人、單行道與停車規則。","共享單車","難波八阪神社"],
+["08:20–08:50","🦁 難波八阪神社打卡","拍攝巨型獅子頭。","步行","難波八阪神社"],
+["08:50–09:00","🚶 前往 Brooklyn Roasting Company","從神社前往咖啡館。","步行","Brooklyn Roasting Company Namba"],
+["09:00–09:35","☕ Brooklyn Roasting Company Namba","咖啡及輕食；先確認當日營業時間。","咖啡館","Brooklyn Roasting Company Namba"],
+["09:35–10:00","🚲／🚶 前往日本橋電電城","先確認指定還車點是否有空位。","單車／步行","でんでんタウン"],
+["10:00–10:50","🛍️ 日本橋早開店鋪","逛已開門的模型、二手商品與動漫周邊店。","步行","でんでんタウン 中古フィギュア"],
+["10:50–11:00","🚶 前往 Animate","前往 Animate 大阪日本橋店。","步行","アニメイト大阪日本橋"],
+["11:00–12:30","🎌 Animate 大阪日本橋店","漫畫、角色周邊、模型及主題活動。","購物","アニメイト大阪日本橋"],
+["12:30–13:15","🏴‍☠️ 電電城／Otaku Road","繼續逛周邊、模型、卡牌與二手店，避免重複走路。","步行","でんでんタウン 日本橋筋商店街"],
+["13:15–13:50","📸 難波豪華花月外觀打卡","只安排外觀拍照，不含觀看演出。","步行","なんばグランド花月"],
+["13:50–14:10","🍰 Rikuro’s 難波本店","購買起司蛋糕，排隊時間另計。","步行","りくろーおじさんの店 なんば本店"],
+["14:10–14:30","🐙 Takoyaki Wanaka","購買章魚燒，確認分店。","步行","たこ焼道楽わなか なんば店"],
+["14:30–14:50","🥟 551 Horai 本店","購買豚まん等大阪名物。","步行","551蓬莱 本店"],
+["14:50–15:10","🚶 前往難波丸井","依導航與人流調整。","步行","なんばマルイ"],
+["15:10–17:00","🛍️ 難波丸井購物","優先目標樓層與角色周邊店。","購物","なんばマルイ"],
+["17:00–18:00","🍽️ 晚餐","在難波丸井或附近用餐。","餐飲","なんばマルイ レストラン"],
+["18:00–18:20","🚶 前往 EDION 難波本店","步行至電器商場。","步行","エディオンなんば本店"],
+["18:20–20:30","🛍️ EDION 難波本店","玩具、模型、手辦、遊戲及電子產品。","購物","エディオンなんば本店"],
+["20:30–21:00","🚇 返回住一新世界","難波站搭御堂筋線至動物園前站。","地鐵＋步行","動物園前駅"]]},
+{date:"2026-11-03",title:"任天堂博物館・宇治・伏見稻荷",subtitle:"小倉站、宇治散步與 Chiikawa 伏見店",items:[
+["07:00–07:30","☀️ 起床＋早餐","住宿附近簡單用餐／便利店，準備 ICOCA 與門票 QR Code。","步行","住一新世界"],
+["07:30–08:00","🚇 新世界 → 大阪難波","動物園前搭御堂筋線至難波，再步行轉近鐵。","大阪 Metro","大阪難波駅"],
+["08:00–09:10","🚆 前往近鐵小倉站","請以預約時段和當天班次重新規劃；注意近鐵小倉站與 JR 小倉站不同。","近鐵","近鉄小倉駅"],
+["09:10–10:00","🚶 入館準備","從近鐵小倉站步行至博物館，核驗預約資料與 QR Code。","步行","ニンテンドーミュージアム"],
+["10:00–11:00","🛍️ 任天堂博物館官方商店","優先購買紀念品與限定商品；已購票，依預約時段入場。","館內","ニンテンドーミュージアム"],
+["11:00–12:30","🎮 任天堂博物館展覽","參觀任天堂歷史、經典主機與遊戲展區。","館內","ニンテンドーミュージアム"],
+["12:30–13:30","🕹️ 任天堂互動體驗","依館內規則與可用項目安排。","館內","ニンテンドーミュージアム"],
+["13:30–14:15","📸 補看展覽＋前往 JR 小倉站","預留步行與車站辨識時間。","步行","JR小倉駅"],
+["14:15–15:15","🚆 JR 小倉 → 宇治＋午餐","搭 JR 奈良線至宇治；此時段包含交通及簡單午餐，時間較緊。","JR 奈良線","宇治駅"],
+["15:15–15:35","🚆 宇治 → JR 稻荷站","依當天班次搭乘。","JR 奈良線","稲荷駅"],
+["15:35–15:45","🚶 前往 Chiikawa 伏見店","從 JR 稻荷站前往商店，請確認實際地址與入店方式。","步行","ちいかわもぐもぐ本舗 伏見店"],
+["15:45–16:45","🛍️ Chiikawa Mogumogu Honpo","購物；營業時間及入店安排以官方公告為準。","購物","ちいかわもぐもぐ本舗 伏見店"],
+["16:45–18:15","⛩️ 伏見稻荷大社","參觀主殿、鳥居及千本鳥居入口一帶，不建議此時走完整座稻荷山。","步行","伏見稲荷大社"],
+["18:15–19:10","🏮 伏見商店街＋返回京都站","部分商店可能已關門；搭 JR 稻荷站至京都站。","步行／JR","京都駅"],
+["19:10–20:00","🏨 入住京阪京都格蘭德酒店","京都站八條口附近；辦理入住、放行李。","步行","ホテル京阪 京都 グランデ"],
+["20:00–21:00","🍜 京都站晚餐","依體力選擇京都站或八條口附近餐廳。","步行","京都駅 八条口"]]},
+{date:"2026-11-04",title:"清水寺・祇園・奈良",subtitle:"古都街景、東大寺與春日大社",items:[
+["06:45–07:00","☀️ 起床＋整理","確認行李寄存／退房安排。","酒店","ホテル京阪 京都 グランデ"],
+["07:00–07:45","🚌 前往清水寺方向","從京都站搭往五条坂方向的巴士；紅葉季可能塞車。","巴士","五条坂 バス停"],
+["07:45–08:30","⛩️ 清水寺","參觀清水舞台與主要區域；以官方開放時間為準。","步行","清水寺"],
+["08:30–09:00","☕ ROOT2 COFFEE Kiyomizu","營業時間需提前確認。","步行","ROOT2 COFFEE Kiyomizu"],
+["09:00–10:00","🏘️ 三年坂＋二年坂","沿傳統街道散步、拍照及逛伴手禮店。","步行","二年坂 三年坂"],
+["10:00–10:45","🚶 前往祇園","沿東山街道往八坂神社、祇園方向移動。","步行","八坂神社 京都"],
+["10:45–11:30","🏮 祇園散步","花見小路與周邊街道；注意私人區域及攝影規定。","步行","祇園 花見小路"],
+["11:30–12:15","🍱 祇園午餐","日式定食、烏冬或拉麵；建議控制用餐時間。","餐飲","祇園 ランチ"],
+["12:15–13:15","🚍 返回京都站＋轉乘準備","預留巴士塞車時間，前往近鐵京都站。","巴士／步行","近鉄京都駅"],
+["13:15–14:00","🚆 京都 → 近鐵奈良站","按當天班次選擇直達或換乘。","近鐵","近鉄奈良駅"],
+["14:00–14:15","🚶 前往奈良公園","沿主要街道步行，留意鹿群。","步行","奈良公園"],
+["14:15–14:45","🦌 奈良公園","欣賞公園景色、與鹿互動及拍照。","步行","奈良公園"],
+["14:45–15:45","🏯 東大寺","經南大門前往大佛殿；確認最後入場時間。","步行","東大寺"],
+["15:45–16:15","🍮 大佛布丁","夢風廣場附近的 まほろば大仏プリン本舗，營業時間以當日公告為準。","步行","まほろば大仏プリン本舗 東大寺門前夢風ひろば"],
+["16:15–17:15","⛩️ 春日大社","從夢風廣場沿指示前往參拜區域，留意步行距離。","步行","春日大社"],
+["17:15–19:30","🚶 返回奈良市區＋商店街","原稿有一段午餐空白；建議以這段作休息、晚餐或縮短春日大社停留。","步行","近鉄奈良駅 商店街"],
+["20:00–20:45","🚆 近鐵奈良 → 大阪難波","依當天時刻表搭乘。","近鐵","大阪難波駅"],
+["20:45–21:15","🚇 返回新世界住宿","根據實際住宿位置選擇方便路線。","大阪 Metro","動物園前駅"]]},
+{date:"2026-11-05",title:"USJ 冒險日",subtitle:"25周年花車、芙莉蓮聯動與夜間活動",items:[
+["07:30–08:00","🏠 住宿出發","從住宿前往近鐵日本橋站。","步行","近鉄日本橋駅"],
+["08:00–09:20","🍢 黑門市場早餐巡禮","高橋豆漿、石橋食品關東煮、鮮魚魚豊鰻魚飯、Maze Cafe Market；部分店可能未開或時間不足，可刪減。","步行","黒門市場"],
+["09:20–10:15","🚆 前往 USJ","近鐵日本橋 → 大阪難波 → 西九條 → JR 環球城；實際換乘以導航為準。","近鐵／阪神／JR","ユニバーサルシティ駅"],
+["10:15–10:30","🎟️ 抵達 USJ","由環球城站步行至入口，預留安檢與入園時間。","步行","ユニバーサル・スタジオ・ジャパン"],
+["10:30–12:30","🎢 USJ 遊玩","依官方 App 安排項目及聯動活動。","園區","ユニバーサル・スタジオ・ジャパン"],
+["12:30–13:00","🚶 前往花車觀賞位置","依官方 App 確認當天花車路線與觀賞區。","園區步行","USJ Hollywood Boulevard"],
+["13:00–13:30","🎉 USJ 25周年紀念花車","原稿所列時間與路線需以官方當日公告為準。","園區","USJ 25周年 パレード"],
+["13:30–14:00","🍴 午餐／休息","選擇附近餐廳或休息區，視排隊調整。","園區","USJ レストラン"],
+["14:00–15:30","🧙《葬送的芙莉蓮》聯動體驗","地點、開放時間、預約方式與活動是否舉行，以官方 App／公告為準。","園區","USJ 葬送のフリーレン"],
+["15:30–17:00","🍽️ 聯動餐廳／自由遊玩","依餐廳預約時間前往。","園區","USJ レストラン"],
+["17:00–17:45","🎢 補玩項目／晚餐","為晚間活動預留時間。","園區","USJ"],
+["17:45–18:20","🧟 前往夜間活動區","依官方 App 確認活動位置及實際開始時間。","園區步行","USJ ストリート・ゾンビ"],
+["18:20–19:00","🧟 夜間表演／僵屍舞蹈","活動可能因日期、天氣或園區安排變動。","園區","USJ Halloween"],
+["19:00–21:00","🚆 離園＋難波自由活動","按體力前往道頓堀／難波，或直接回住宿。","JR／電車","道頓堀"]]},
+{date:"2026-11-06",title:"朝日啤酒工廠・天神橋筋・難波",subtitle:"工廠預約、商店街與地下購物街",items:[
+["早上","🏠 住一新世界出發","前往 JR 新今宮站；依啤酒工廠預約時段調整出發時間。","步行＋電車","新今宮駅"],
+["早上","🚆 前往吹田","新今宮 → 大阪站 → JR 吹田站；確認當天路線與班次。","JR","JR吹田駅"],
+["預約前","🚶 前往朝日啤酒吹田工廠","從 JR 吹田站步行約10分鐘的資訊請再核實，預留報到時間。","步行","アサヒビール ミュージアム 吹田"],
+["預約時段","🍺 朝日啤酒工廠參觀","按預約確認信參加導覽；確認參觀規則及是否包含試飲。","預約參觀","アサヒビール ミュージアム"],
+["參觀結束後","🚆 前往天神橋筋商店街","返回大阪市區，再前往扇町／天神橋筋六丁目一帶。","JR＋Metro","天神橋筋商店街"],
+["約11:30–13:00","🛍️ 天神橋筋商店街","不用走完整條，挑感興趣的區段。","步行","天神橋筋商店街"],
+["約13:00–13:30","🍞 COBATOPAN","營業情況與實際位置出發前確認。","步行","COBATOPAN 大阪"],
+["約13:30–14:15","⛩️ 大阪天滿宮","參拜、拍照。","步行","大阪天満宮"],
+["14:15–15:00","🚆 前往難波","從南森町／扇町一帶前往難波站。","電車","なんば駅"],
+["15:00–17:00","🛍️ 難波 CITY","服飾、雜貨、UNIQLO 等目標店。","購物","なんばCITY"],
+["17:00–18:00","🛍️ 難波 Walk","地下購物街。","購物","なんばウォーク"],
+["18:00–19:00","🍜 晚餐","難波 CITY 或難波 Walk 選擇餐廳。","餐飲","なんばCITY レストラン"],
+["19:00–20:00","🛍️ 補逛購物","按購物進度與體力決定。","步行","なんばCITY"],
+["20:00以後","🏠 返回住一新世界","從難波站返回住宿。","電車＋步行","動物園前駅"]]},
+{date:"2026-11-07",title:"天王寺・Chiikawa・臨空城 Outlet",subtitle:"最後衝刺購物，夜宿關西機場附近",items:[
+["08:00–08:30","🧳 退房、整理行李","先確認住宿能否寄放行李；帶行李移動時預留電梯時間。","步行","住一新世界"],
+["08:30–09:30","🚇 前往天王寺＋入園準備","天王寺動物園原稿寫09:30開門；請再確認季節營業時間。","地鐵／步行","天王寺動物園"],
+["09:30–11:00","🦒 天王寺動物園","看動物、拍照；實際入園時段依官方公告。","步行","天王寺動物園"],
+["11:00–11:15","🚶 前往天王寺 MIO","步行前往商場。","步行","天王寺MIO"],
+["11:15–12:15","🍱 天王寺 MIO 午餐","先吃飯，避開午餐高峰。","餐飲","天王寺MIO レストラン"],
+["12:15–13:15","🛍️ 天王寺 MIO 購物","逛目標店；原稿提到物語系列 POP UP，請確認活動資訊。","購物","天王寺MIO"],
+["13:15–13:45","🐰 Chiikawa 快閃店","原稿所列活動期10/30–11/15、6F與營業時間需再核對官方公告／X。","購物","天王寺MIO ちいかわ POP UP"],
+["13:45–14:00","🚶 前往天王寺 JR 站","帶行李移動，預留找路時間。","步行","天王寺駅"],
+["14:00–15:00","🚆 天王寺 → 臨空城","搭乘關空快速等合適班次；確認是否需換乘。","JR","りんくうタウン駅"],
+["15:00–15:45","🏨 關西機場華盛頓酒店","前往酒店辦理入住、放行李；實際入住時間以酒店規定為準。","步行／接駁","関西エアポートワシントンホテル"],
+["15:45–16:00","🚶 前往臨空城 Outlet","步行或按當天接駁資訊前往。","步行／巴士","りんくうプレミアム・アウトレット"],
+["16:00–19:30","🛍️ 臨空城 Premium Outlets","購物、晚餐；商場營業時間請出發前確認。","步行","りんくうプレミアム・アウトレット"],
+["19:30–20:15","🛍️ 最後採購／返回酒店","注意閉店時間，回酒店整理行李。","步行／巴士","関西エアポートワシントンホテル"],
+["21:00以後","🛌 酒店休息","確認隔天接駁車班次、航廈與值機櫃檯。","酒店","関西エアポートワシントンホテル"]]},
+{date:"2026-11-08",title:"返程・大阪再見",subtitle:"關西機場 → 河內 → 吉隆坡",items:[
+["05:45","☀️ 起床","洗漱、檢查行李。","酒店","関西エアポートワシントンホテル"],
+["06:15–06:30","🧳 最後檢查行李","護照、錢包、手機、充電器、登機資料。","酒店","—"],
+["06:30","🏨 酒店退房","依酒店規定辦理退房。","酒店","関西エアポートワシントンホテル"],
+["06:30–07:00","🚌 酒店 → KIX","優先確認酒店接駁車班次；必要時改搭計程車／電車。","接駁／交通","関西空港 第1ターミナル"],
+["07:00","⭐ 抵達關西機場","目標時間；實際建議抵達時間請遵守航空公司要求。","步行","関西空港 第1ターミナル"],
+["07:00–09:10","🎫 值機、托運、出境與機場購物","不要為免稅購物壓縮報到、安檢與前往登機口的時間。","步行","KIX T1"],
+["09:10–09:30","🚶 前往登機口","確認登機口及是否需搭乘機場內接駁。","步行","KIX T1"],
+["10:00","✈️ VN335 起飛","KIX T1 → 河內 HAN T2，13:35抵達。","航班","KIX → HAN"],
+["13:35–14:50","🛫 河內轉機","轉機約1小時15分鐘；確認是否需重新安檢、登機口距離與登機截止時間。","轉機","Hanoi T2"],
+["14:50","✈️ VN681 起飛","河內 HAN T2 → KLIA T1，19:10抵達。","航班","HAN → KUL"],
+["19:10","🏡 抵達馬來西亞","旅程結束。","—","KLIA T1"]]}
+];
+const checklist={
+checkTravel:["護照及入境所需資料","電子機票／登機證","酒店訂房確認","ICOCA／交通支付方式","任天堂博物館預約 QR Code","大阪城天守閣門票","海洋堂博物館 KKday 憑證","Chiikawa Bakery 預約確認","朝日啤酒工廠預約確認","USJ 門票／Express Pass／官方 App","旅遊保險資料"],
+checkPack:["手機與充電線","行動電源（隨身攜帶）","日本轉接插頭","耳機","舒適步行鞋","雨傘／輕便雨衣","日常藥品","購物用摺疊袋","護膚與洗漱用品","保暖外套（依天氣調整）"],
+checkBooking:["確認 VN680／VN334 去程航班與轉機規則","確認 VN335／VN681 回程航班與轉機規則","確認 HARUKA／關西機場交通","確認 Chiikawa Bakery 預約時段","確認任天堂博物館入場時段","確認朝日啤酒工廠報到時間","確認 USJ 當日活動與遊行時間","確認天王寺 MIO Chiikawa 快閃資訊","確認臨空城 Outlet 與酒店接駁時間"]
+};
+function dateLabel(s){const d=new Date(s+"T12:00:00");return `${d.getMonth()+1}/${d.getDate()}（${["日","一","二","三","四","五","六"][d.getDay()]}）`}
+function renderDays(){const list=document.getElementById('dayList'),content=document.getElementById('dayContent');list.innerHTML='';days.forEach((d,i)=>{const b=document.createElement('button');b.className='day-button'+(i===0?' active':'');b.innerHTML=`<b>${dateLabel(d.date)}</b><small>${d.title}</small>`;b.onclick=()=>selectDay(i);list.appendChild(b)});selectDay(0)}
+function selectDay(i){document.querySelectorAll('.day-button').forEach((b,j)=>b.classList.toggle('active',i===j));const d=days[i];const content=document.getElementById('dayContent');content.innerHTML=`<div class="day-head"><div class="eyebrow">${dateLabel(d.date)} · CHAPTER ${String(i+1).padStart(2,'0')}</div><h2>${d.title}</h2><div>${d.subtitle}</div></div><div class="timeline">${d.items.map(e=>{const url='https://www.google.com/maps/search/?api=1&query='+encodeURIComponent(e[4]);return `<article class="event"><div class="event-top"><div><h3>${e[1]}</h3></div><span class="time">${e[0]}</span></div><p>${e[2]}</p><div class="tags"><span class="tag">${e[3]}</span></div><a href="${url}" target="_blank" rel="noopener">📍 Google Maps 導航</a></article>`}).join('')}</div>`}
+document.querySelectorAll('[data-tab]').forEach(b=>b.addEventListener('click',()=>{document.querySelectorAll('[data-tab]').forEach(x=>x.classList.toggle('active',x===b));document.querySelectorAll('.section').forEach(s=>s.classList.toggle('active',s.id===b.dataset.tab));window.scrollTo({top:0,behavior:'smooth'})}));
+renderDays();
+function renderChecks(){Object.entries(checklist).forEach(([id,items])=>{const el=document.getElementById(id);el.innerHTML=items.map((x,i)=>{const key='osaka26_'+id+'_'+i;const checked=localStorage.getItem(key)==='1';return `<label class="checkrow ${checked?'done':''}"><input type="checkbox" ${checked?'checked':''} data-key="${key}"><span>${x}</span></label>`}).join('');el.querySelectorAll('input').forEach(c=>c.onchange=()=>{localStorage.setItem(c.dataset.key,c.checked?'1':'0');c.parentElement.classList.toggle('done',c.checked)})})}
+function resetChecks(){Object.keys(checklist).forEach(id=>checklist[id].forEach((_,i)=>localStorage.removeItem('osaka26_'+id+'_'+i)));renderChecks()}
+renderChecks();
+let expenses=JSON.parse(localStorage.getItem('osaka26_expenses')||'[]');
+function renderExpenses(){const rows=document.getElementById('expenseRows');rows.innerHTML=expenses.map((e,i)=>`<tr><td>${e.date}</td><td>${escapeHtml(e.name)}</td><td>${e.cat}</td><td>¥${Number(e.amount).toLocaleString('ja-JP')}</td><td><button class="btn secondary" onclick="deleteExpense(${i})">刪除</button></td></tr>`).join('')||'<tr><td colspan="5" class="small">尚未記錄消費。</td></tr>';const total=expenses.reduce((s,e)=>s+Number(e.amount),0);document.getElementById('totalSpend').textContent='¥'+total.toLocaleString('ja-JP');document.getElementById('spCount').textContent=expenses.length;document.getElementById('avgSpend').textContent='¥'+Math.round(total/(expenses.length||1)).toLocaleString('ja-JP')}
+function addExpense(){const date=document.getElementById('spDate').value,name=document.getElementById('spName').value.trim(),amount=Number(document.getElementById('spAmount').value),cat=document.getElementById('spCat').value;if(!date||!name||!Number.isFinite(amount)||amount<0){alert('請填寫日期、項目及有效金額。');return}expenses.push({date,name,amount,cat});localStorage.setItem('osaka26_expenses',JSON.stringify(expenses));document.getElementById('spName').value='';document.getElementById('spAmount').value='';renderExpenses()}
+function deleteExpense(i){expenses.splice(i,1);localStorage.setItem('osaka26_expenses',JSON.stringify(expenses));renderExpenses()}
+function exportExpenses(){const csv='日期,項目,分類,金額(JPY)\\n'+expenses.map(e=>[e.date,'"'+e.name.replaceAll('"','""')+'"',e.cat,e.amount].join(',')).join('\\n');const blob=new Blob(['\\ufeff'+csv],{type:'text/csv;charset=utf-8;'});const a=document.createElement('a');a.href=URL.createObjectURL(blob);a.download='osaka-2026-expenses.csv';a.click();URL.revokeObjectURL(a.href)}
+function escapeHtml(s){return s.replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+renderExpenses();
+const memo=document.getElementById('memo');memo.value=localStorage.getItem('osaka26_memo')||'';function saveMemo(){localStorage.setItem('osaka26_memo',memo.value);document.getElementById('memoStatus').textContent=' 已儲存！';setTimeout(()=>document.getElementById('memoStatus').textContent='',2000)}
+</script>
+</body></html>
